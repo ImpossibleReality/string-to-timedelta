@@ -1,6 +1,6 @@
 {
   "name": "string-to-timedelta",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Transform human readable strings to milliseconds",
   "main": "index.js",
   "scripts": {

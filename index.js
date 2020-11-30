@@ -3,6 +3,7 @@
 
 timeRegex = /(?:(?:([0-9]+)(?:d| ?days?)(?:, ?| )?)|(?:([0-9]+)(?:h| ?hours?| ?hrs?)(?:, ?| )?)|(?:([0-9]+)(?:m| ?minutes?| ?hrs?)(?:, ?| )?)|(?:([0-9]+)(?:s| ?seconds?)(?:,(?: ?and)? ?| )?))/gi
 function test(data) {
+    timeRegex.lastIndex = 0
     return timeRegex.test(data/*.trim()*/)
 }
 function parse(/*startD*/data) {
@@ -33,5 +34,8 @@ function parse(/*startD*/data) {
     }
     return time
 }
-
+console.log(test('1m '))
+console.log(test('2s '))
+console.log(test('5m '))
+console.log(test('1m '))
 module.exports = { test, parse }
