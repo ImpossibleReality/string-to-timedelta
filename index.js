@@ -34,8 +34,4 @@ function parse(/*startD*/data) {
     }
     return time
 }
-console.log(test('1m '))
-console.log(test('2s '))
-console.log(test('5m '))
-console.log(test('1m '))
 module.exports = { test, parse }
